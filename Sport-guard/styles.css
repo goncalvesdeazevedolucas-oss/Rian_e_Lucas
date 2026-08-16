@@ -46,7 +46,7 @@ ul{list-style:none;}
     radial-gradient(ellipse at 85% 10%, rgba(230,59,46,.25), transparent 55%),
     linear-gradient(135deg,var(--hero-start),var(--hero-end));
   color:#f5ece2;
-  padding:26px 6vw 80px;
+  padding:110px 6vw 80px;
   overflow:hidden;
 }
 .hero.hero-home{padding-bottom:100px;}
@@ -77,16 +77,11 @@ ul{list-style:none;}
   transform:translate(-50%,-50%) rotate(45deg);
 }
 .hero-home .no-symbol::after{width:150px; height:8px;}
-.topbar{
-  position:relative; z-index:2;
-  display:flex; justify-content:space-between; align-items:center;
-  margin-bottom:36px; flex-wrap:wrap; gap:16px;
-}
-.hero-home .topbar{margin-bottom:44px;}
 .logo{
   font-family:var(--font-display);
   font-size:1.05rem;
   letter-spacing:.04em;
+  color:#f5ece2;
   display:flex; align-items:center; gap:8px;
 }
 .logo-dot{width:10px;height:10px;background:var(--accent);border-radius:3px;}
@@ -129,40 +124,24 @@ ul{list-style:none;}
 }
 .btn-outline:hover{border-color:var(--accent); color:var(--accent);}
 
-/* ---------- PILL NAV ---------- */
-.pillnav{
-  max-width:760px; margin:-40px auto 0; background:var(--nav-bg);
-  border-radius:999px; display:flex; justify-content:space-between; align-items:center;
-  padding:14px 26px; box-shadow:0 16px 34px rgba(0,0,0,.2);
-  position:relative; z-index:5; flex-wrap:wrap; gap:12px;
-  transition:background .3s ease;
+/* ---------- TOPBAR (fixa em todas as páginas) ---------- */
+.topbar{
+  position:fixed; top:0; left:0; right:0; z-index:100;
+  display:flex; justify-content:space-between; align-items:center;
+  padding:18px 6vw; flex-wrap:wrap; gap:16px;
+  background:linear-gradient(180deg, var(--hero-start) 0%, var(--hero-start) 60%, transparent 100%);
 }
-.pillnav .links{display:flex; align-items:center; gap:22px; flex-wrap:wrap;}
-.pillnav a, .pillnav summary{
-  display:flex; align-items:center; gap:6px; text-decoration:none;
-  color:var(--text); font-weight:600; font-size:.85rem; cursor:pointer; list-style:none;
-}
-.pillnav summary::-webkit-details-marker{display:none;}
-.pillnav a.active, .dropdown[open] summary{color:var(--accent);}
-.pillnav svg{width:16px; height:16px; stroke:currentColor; fill:none; stroke-width:2;}
-.dropdown{position:relative;}
-.dropdown .menu{
-  position:absolute; top:calc(100% + 14px); left:50%; transform:translateX(-50%);
-  background:var(--nav-bg); border-radius:16px; padding:10px; min-width:150px;
-  box-shadow:0 12px 26px rgba(0,0,0,.18); display:flex; flex-direction:column; gap:4px;
-}
-.dropdown .menu a{padding:8px 10px; border-radius:10px;}
-.dropdown .menu a:hover{background:rgba(0,0,0,.06);}
-.dropdown .menu a.active{color:var(--accent);}
+.nav-actions{display:flex; align-items:center; gap:14px;}
 .theme-toggle{
-  background:none; border:none; cursor:pointer; color:var(--text);
+  background:none; border:none; cursor:pointer; color:#e9d7c9;
   display:flex; align-items:center; padding:4px;
 }
+.theme-toggle:hover{color:var(--accent);}
 .theme-toggle svg{width:18px; height:18px; stroke:currentColor; fill:none; stroke-width:2;}
 
 /* ---------- MAIN / CARDS ---------- */
 main{max-width:960px; margin:70px auto; padding:0 6vw; display:flex; flex-direction:column; gap:44px; scroll-margin-top:30px;}
-.card-outer{background:var(--outer-bg); border-radius:var(--radius-lg); padding:32px; transition:background .3s ease; scroll-margin-top:30px;}
+.card-outer{background:var(--outer-bg); border-radius:var(--radius-lg); padding:32px; transition:background .3s ease; scroll-margin-top:100px;}
 .card-inner{background:var(--inner-bg); color:var(--inner-text); border-radius:var(--radius-md); padding:34px 30px; transition:background .3s ease,color .3s ease;}
 .card-inner h2{font-family:var(--font-display); text-align:center; text-transform:uppercase; font-size:1.35rem; margin-bottom:20px; letter-spacing:.02em;}
 .card-inner p{line-height:1.8; margin-bottom:16px; font-size:.95rem;}
@@ -245,9 +224,8 @@ footer{
 /* ---------- RESPONSIVE ---------- */
 @media (max-width:640px){
   .toplinks{display:none;}
-  .pillnav{padding:12px 18px;}
-  .pillnav .links{gap:14px;}
-  .pillnav a span.label, .pillnav summary span.label{display:none;}
+  .topbar{padding:14px 5vw;}
+  .hero{padding-top:92px;}
   .card-outer{padding:20px;}
   .card-inner{padding:26px 20px;}
   .case-grid{grid-template-columns:1fr;}
