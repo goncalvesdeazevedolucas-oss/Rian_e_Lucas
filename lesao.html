@@ -15,10 +15,9 @@
   <div class="logo"><span class="logo-dot"></span>SPORTGUARD</div>
   <nav class="toplinks">
     <a href="index.html">Início</a>
-    <a href="doping.html">Antidoping</a>
+    <a href="doping.html">Doping</a>
     <a href="lesao.html" class="active">Lesões</a>
     <a href="sobre.html">Sobre Nós</a>
-    <a href="sobre.html#contato">Contato</a>
   </nav>
   <div class="nav-actions">
     <a class="cta-btn" href="sobre.html#contato">Fale Conosco</a>
@@ -33,6 +32,7 @@
   <p class="breadcrumb"><a href="index.html">Início</a> / Lesões</p>
   <h1>Lesão</h1>
 </header>
+<div class="hero-fade"></div>
 
 <main>
   <section class="card-outer">
@@ -53,6 +53,113 @@ movimentos repetitivos <br> exemplos: digitar, costurar, tocar um instrumento, e
  - Evitar movimentos bruscos ou repetitivos; <br>
  - fortalecer os músculos e as articulações.<br>
 </p>
+    </div>
+  </section>
+
+  <section class="card-outer">
+    <h2 class="section-title">Mapa de Lesões por Região</h2>
+    <p class="section-lead">Passe o mouse (ou toque, no celular) nos pontos do corpo para ver as lesões mais comuns em cada região.</p>
+    <div class="body-map">
+      <svg class="body-figure" viewBox="0 0 200 350" xmlns="http://www.w3.org/2000/svg">
+        <ellipse cx="100" cy="340" rx="66" ry="8" fill="rgba(0,0,0,.08)"/>
+        <circle cx="100" cy="36" r="24" fill="var(--figure-fill)"/>
+        <rect x="90" y="56" width="20" height="14" rx="6" fill="var(--figure-fill)"/>
+        <path d="M60 66 Q100 54 140 66 L146 188 Q100 204 54 188 Z" fill="var(--figure-fill)"/>
+        <line x1="62" y1="78" x2="30" y2="192" stroke="var(--figure-fill)" stroke-width="24" stroke-linecap="round"/>
+        <line x1="138" y1="78" x2="170" y2="192" stroke="var(--figure-fill)" stroke-width="24" stroke-linecap="round"/>
+        <circle cx="29" cy="198" r="14" fill="var(--figure-fill)"/>
+        <circle cx="171" cy="198" r="14" fill="var(--figure-fill)"/>
+        <line x1="82" y1="195" x2="78" y2="322" stroke="var(--figure-fill)" stroke-width="34" stroke-linecap="round"/>
+        <line x1="118" y1="195" x2="122" y2="322" stroke="var(--figure-fill)" stroke-width="34" stroke-linecap="round"/>
+        <ellipse cx="72" cy="332" rx="19" ry="10" fill="var(--figure-fill)"/>
+        <ellipse cx="128" cy="332" rx="19" ry="10" fill="var(--figure-fill)"/>
+      </svg>
+
+      <div class="hotspot hs-open-left" style="--x:70%; --y:24.3%; --tag-color:#2f6fe0;">
+        <button class="dot-btn" aria-label="Lesões no ombro"><span class="dot"></span></button>
+        <div class="hotspot-box">
+          <h4>Ombro</h4>
+          <ul>
+            <li>Luxações</li>
+            <li>Tendinite do manguito rotador</li>
+            <li>Impacto no ombro</li>
+          </ul>
+          <p class="sports-label">Comum em:</p>
+          <div class="sport-pills"><span>Natação</span><span>Handebol</span><span>Vôlei</span><span>Lutas</span></div>
+        </div>
+      </div>
+
+      <div class="hotspot" style="--x:14.5%; --y:56.6%; --tag-color:#7b3fb0;">
+        <button class="dot-btn" aria-label="Lesões em punhos e mãos"><span class="dot"></span></button>
+        <div class="hotspot-box">
+          <h4>Punhos e Mãos</h4>
+          <ul>
+            <li>Fraturas</li>
+            <li>Luxações</li>
+            <li>Tendinites</li>
+          </ul>
+          <p class="sports-label">Comum em:</p>
+          <div class="sport-pills"><span>Esportes de contato</span><span>Basquete</span><span>Ginástica</span></div>
+        </div>
+      </div>
+
+      <div class="hotspot hs-center" style="--x:50%; --y:40%; --tag-color:#2c8a4b;">
+        <button class="dot-btn" aria-label="Lesões na coluna e abdômen"><span class="dot"></span></button>
+        <div class="hotspot-box">
+          <h4>Coluna / Abdômen</h4>
+          <ul>
+            <li>Dor lombar</li>
+            <li>Sobrecarga muscular</li>
+          </ul>
+          <p class="sports-label">Comum em:</p>
+          <div class="sport-pills"><span>Musculação</span><span>Ciclismo</span><span>Ginástica</span></div>
+        </div>
+      </div>
+
+      <div class="hotspot hs-open-left" style="--x:59.7%; --y:68.6%; --tag-color:#d19a1f;">
+        <button class="dot-btn" aria-label="Lesões na coxa"><span class="dot"></span></button>
+        <div class="hotspot-box">
+          <h4>Coxa e Posterior da Coxa</h4>
+          <ul>
+            <li>Estiramentos musculares</li>
+            <li>Distensões</li>
+          </ul>
+          <p class="sports-label">Comum em:</p>
+          <div class="sport-pills"><span>Corrida</span><span>Futebol</span></div>
+        </div>
+      </div>
+
+      <div class="hotspot" style="--x:39.8%; --y:77.1%; --tag-color:#e0752f;">
+        <button class="dot-btn" aria-label="Lesões no joelho"><span class="dot"></span></button>
+        <div class="hotspot-box">
+          <h4>Joelho</h4>
+          <ul>
+            <li>Lesões de ligamento (como LCA)</li>
+            <li>Menisco</li>
+            <li>Tendinite patelar</li>
+          </ul>
+          <p class="sports-label">Comum em:</p>
+          <div class="sport-pills"><span>Futebol</span><span>Basquete</span><span>Vôlei</span><span>Corrida</span></div>
+        </div>
+      </div>
+
+      <div class="hotspot hs-open-left hs-bottom" style="--x:60.9%; --y:90%; --tag-color:#d1382b;">
+        <button class="dot-btn" aria-label="Lesões no tornozelo"><span class="dot"></span></button>
+        <div class="hotspot-box">
+          <h4>Tornozelo</h4>
+          <ul>
+            <li>Entorses</li>
+            <li>Lesões de ligamentos</li>
+          </ul>
+          <p class="sports-label">Comum em:</p>
+          <div class="sport-pills"><span>Vôlei</span><span>Basquete</span><span>Futebol</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="card-outer">
+    <div class="card-inner">
       <h1>Tipos comuns de lesões esportivas</h1><br><br>
       <p> - Entorses O estiramento excessivo ou ruptura de ligamentos, que são estruturas que ligam os ossos, resulta em uma torção. Os joelhos, pulsos e tornozelos tendem a ser afetados. Os sintomas incluem desconforto, edema e dificuldade de movimentação.<br><br>
 
@@ -83,77 +190,6 @@ movimentos repetitivos <br> exemplos: digitar, costurar, tocar um instrumento, e
 
  - CONCUSSÃO: Uma concussão é uma lesão violenta na cabeça, que faz com que o cérebro bata na parte interna do crânio. Praticar esportes de contato às vezes resulta em concussões.<br><br>
 </p>
-    </div>
-  </section>
-
-  <section class="card-outer">
-    <h2 class="section-title">Mapa de Lesões por Região</h2>
-    <p class="section-lead">Principais lesões associadas a cada região do corpo e as modalidades esportivas em que são mais comuns.</p>
-    <div class="injury-grid">
-
-      <div class="injury-card" style="--tag-color:#2f6fe0;">
-        <span class="tag">Ombro</span>
-        <ul>
-          <li>Luxações</li>
-          <li>Tendinite do manguito rotador</li>
-          <li>Impacto no ombro</li>
-        </ul>
-        <p class="sports-label">Comum em:</p>
-        <div class="sport-pills"><span>Natação</span><span>Handebol</span><span>Vôlei</span><span>Lutas</span></div>
-      </div>
-
-      <div class="injury-card" style="--tag-color:#7b3fb0;">
-        <span class="tag">Punhos e Mãos</span>
-        <ul>
-          <li>Fraturas</li>
-          <li>Luxações</li>
-          <li>Tendinites</li>
-        </ul>
-        <p class="sports-label">Comum em:</p>
-        <div class="sport-pills"><span>Esportes de contato</span><span>Basquete</span><span>Ginástica</span></div>
-      </div>
-
-      <div class="injury-card" style="--tag-color:#2c8a4b;">
-        <span class="tag">Coluna / Abdômen</span>
-        <ul>
-          <li>Dor lombar</li>
-          <li>Sobrecarga muscular</li>
-        </ul>
-        <p class="sports-label">Comum em:</p>
-        <div class="sport-pills"><span>Musculação</span><span>Ciclismo</span><span>Ginástica</span></div>
-      </div>
-
-      <div class="injury-card" style="--tag-color:#d19a1f;">
-        <span class="tag">Coxa e Posterior da Coxa</span>
-        <ul>
-          <li>Estiramentos musculares</li>
-          <li>Distensões</li>
-        </ul>
-        <p class="sports-label">Comum em:</p>
-        <div class="sport-pills"><span>Corrida</span><span>Futebol</span></div>
-      </div>
-
-      <div class="injury-card" style="--tag-color:#e0752f;">
-        <span class="tag">Joelho</span>
-        <ul>
-          <li>Lesões de ligamento (como LCA)</li>
-          <li>Menisco</li>
-          <li>Tendinite patelar</li>
-        </ul>
-        <p class="sports-label">Comum em:</p>
-        <div class="sport-pills"><span>Futebol</span><span>Basquete</span><span>Vôlei</span><span>Corrida</span></div>
-      </div>
-
-      <div class="injury-card" style="--tag-color:#d1382b;">
-        <span class="tag">Tornozelo</span>
-        <ul>
-          <li>Entorses</li>
-          <li>Lesões de ligamentos</li>
-        </ul>
-        <p class="sports-label">Comum em:</p>
-        <div class="sport-pills"><span>Vôlei</span><span>Basquete</span><span>Futebol</span></div>
-      </div>
-
     </div>
   </section>
 </main>

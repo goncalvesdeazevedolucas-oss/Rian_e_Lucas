@@ -19,4 +19,17 @@ document.addEventListener('DOMContentLoaded', function () {
       if (!d.contains(e.target)) d.removeAttribute('open');
     });
   });
+
+  document.querySelectorAll('.dot-btn, .vial-btn').forEach(function (btn) {
+    btn.addEventListener('click', function (e) {
+      e.stopPropagation();
+      var item = btn.closest('.hotspot, .vial-item');
+      var wasActive = item.classList.contains('active');
+      document.querySelectorAll('.hotspot.active, .vial-item.active').forEach(function (o) { o.classList.remove('active'); });
+      if (!wasActive) item.classList.add('active');
+    });
+  });
+  document.addEventListener('click', function () {
+    document.querySelectorAll('.hotspot.active, .vial-item.active').forEach(function (o) { o.classList.remove('active'); });
+  });
 });
